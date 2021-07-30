@@ -29,6 +29,7 @@ public class Test1 extends Base{
 		driver.get(p.getProperty("url"));
 		LandingPage lp = new LandingPage(driver);
 		lp.getSignin().click();
+		System.out.println("Signed in");
 		
 		LandingPage1 lp1 = new LandingPage1(driver);
 		lp1.getEmailLogin().click();
@@ -45,6 +46,8 @@ public class Test1 extends Base{
 		
 		
 		lp2.getLogin().click();
+		
+		System.out.println("logged in");
 		
 	}
 	
